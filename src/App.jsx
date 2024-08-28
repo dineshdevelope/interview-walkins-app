@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import FormInput from "./components/forms/formInput";
+import FormInput from "./components/forms/FormInput";
 import FormTextArea from "./components/forms/FormTextArea";
 import FormSelect from "./components/forms/FormSelect";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -113,8 +113,8 @@ const App = () => {
               register={register("comments")}
               error={errors.comments}
             />
-            <div className="text-center">
-              <button className="bg-orange-600 p-3 rounded-lg text-white font-semibold">
+            <div className="text-center ">
+              <button className="bg-orange-600 p-3 rounded-lg text-white font-semibold justify-center w-20 mx-auto">
                 Submit
               </button>
             </div>
